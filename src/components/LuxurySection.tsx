@@ -81,15 +81,6 @@ const LuxurySection = () => {
                 </div>
               </Card>
             </div>
-            
-            <div className="pt-6">
-              <Button 
-                size="lg" 
-                className="bg-luxury-accent hover:bg-luxury-accent/90 text-luxury-bg px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Explore Luxury Rooms
-              </Button>
-            </div>
           </div>
           
           {/* Room Image */}

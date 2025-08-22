@@ -17,7 +17,7 @@ const ContactSection = () => {
           
           <Card className="p-8 lg:p-12 shadow-xl border-0 bg-gradient-to-br from-primary-light to-background">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Phone Numbers */}
+              {/* Phone */}
               <div className="space-y-4">
                 <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -26,8 +26,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-                  <p className="text-primary font-semibold">9344112403</p>
-                  <p className="text-accent font-medium">7010216681</p>
+                  <a href="tel:+919344112403" className="text-primary font-semibold block">
+                    +91 9344112403
+                  </a>
+                  <a href="tel:+917010216681" className="text-accent font-medium block">
+                    +91 7010216681
+                  </a>
                 </div>
               </div>
               
@@ -40,9 +44,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                  <p className="text-primary font-medium break-all">
-                    m.reliable.stay@gmail.com
-                  </p>
+                  <a
+                    href="mailto:rn.reliable.stay@gmail.com"
+                    className="text-primary font-medium break-all block"
+                  >
+                    rn.reliable.stay@gmail.com
+                  </a>
                 </div>
               </div>
               
@@ -73,9 +80,14 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Website</h3>
-                  <p className="text-primary font-medium break-all">
-                    mreliablestay.wordpress.com
-                  </p>
+                  <a
+                    href="http://rnreliablestay.wordpress.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-medium break-all block"
+                  >
+                    rnreliablestay.wordpress.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -85,12 +97,12 @@ const ContactSection = () => {
               <div className="bg-accent text-accent-foreground px-8 py-6 rounded-2xl inline-block shadow-lg">
                 <h3 className="text-2xl font-bold mb-2">Ready to Book?</h3>
                 <p className="mb-4 opacity-90">Call us now for instant reservations</p>
-                <Button 
-                  size="lg" 
-                  className="bg-accent-foreground text-accent hover:bg-accent-foreground/90 px-8 py-3 font-semibold rounded-xl"
+                <a
+                  href="tel:+919344112403"
+                  className="bg-accent-foreground text-accent hover:bg-accent-foreground/90 px-8 py-3 font-semibold rounded-xl inline-block"
                 >
-                  Call Now: 9344112403
-                </Button>
+                  Call Now: +91 9344112403
+                </a>
               </div>
             </div>
           </Card>

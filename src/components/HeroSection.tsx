@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hotel-exterior.jpg";
 
@@ -72,9 +71,12 @@ const HeroSection = () => {
             </div>
             
             <div className="pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <a
+                href="tel:9344112403"
+                className="inline-block bg-primary hover:bg-primary-dark text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+              >
                 Book Your Stay
-              </Button>
+              </a>
             </div>
           </div>
           
@@ -90,8 +92,7 @@ const HeroSection = () => {
             
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold">₹999</div>
-              <div className="text-sm opacity-90">per night</div>
+              {/* <div className="text-2xl font-bold">₹999</div> */}
             </div>
           </div>
         </div>
